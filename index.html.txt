@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phyke | Master Physics Exam Temperament</title>
+    <style>
+        :root {
+            --quantum-violet: #1B0B3B;
+            --electric-cyan: #00F0FF;
+            --text-main: #FFFFFF;
+            --text-muted: #A09DB0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--quantum-violet);
+            background-image: radial-gradient(circle at 50% 0%, #2A1158 0%, transparent 50%);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .logo span {
+            color: var(--electric-cyan);
+            display: inline-block;
+            transform: translateY(-2px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 480px) {
+            .form-group {
+                flex-direction: row;
+            }
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 15px 20px;
+            border: 1px solid #3D2270;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="email"]:focus {
+            border-color: var(--electric-cyan);
+        }
+
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--electric-cyan);
+            color: var(--quantum-violet);
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.4);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">phyke<span>↗</span></div>
+        
+        <!-- Hook -->
+        <h1>Master Exam Temperament.<br>Don't Fall for the Trap.</h1>
+        <p>The ultimate Class 11 & 12 Physics platform is currently in development. Exclusive option traps, visual labs, and zero fluff. Join the waitlist to get early access.</p>
+        
+        <!-- Waitlist Form (Visual Setup) -->
+        <form id="waitlist-form" class="form-group" onsubmit="event.preventDefault(); alert('We will connect this to Google Sheets next!');">
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+
+        <!-- Footer -->
+        <div class="footer">
+            &copy; 2026 phyke.in | Conceptualized by Mr. Siddhant Johari
+        </div>
+    </div>
+</body>
+</html>
