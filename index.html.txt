@@ -127,11 +127,10 @@
         <p>The ultimate Class 11 & 12 Physics platform is currently in development. Exclusive option traps, visual labs, and zero fluff. Join the waitlist to get early access.</p>
         
         <!-- Waitlist Form (Visual Setup) -->
-        <form id="waitlist-form" class="form-group" onsubmit="event.preventDefault(); alert('We will connect this to Google Sheets next!');">
-            <input type="email" id="email" placeholder="Enter your email address" required>
-            <button type="submit">Join Waitlist</button>
-        </form>
-
+        <form class="form-group" method="POST" action="https://script.google.com/macros/s/AKfycbxYhl09CASYFaYr-H2bElw3jk2spRcGhppq7u8xiGc_btBrG2gZgn-kaKISfE0XnS1T/exec">
+    <input type="email" name="Email" placeholder="Enter your email address" required>
+    <button type="submit">Join Waitlist</button>
+</form>
         <!-- Footer -->
         <div class="footer">
             &copy; 2026 phyke.in | Conceptualized by Mr. Siddhant Johari
